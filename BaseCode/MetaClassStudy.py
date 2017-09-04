@@ -4,8 +4,13 @@ class MyClass(object):
         print(self._meta.name)
 
 class TestClass(MyClass):
-    class meta:
+    class Meta:
         name = 'jason'
 
+class TestClass1(object):
+    class Meta:
+        name = 'jason'
 c = MyClass()
-c.test()
+#c.test()
+t = TestClass1()
+print(t._meta)

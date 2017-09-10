@@ -1,0 +1,33 @@
+* 配置模块导入路径
+    sys.path.append('xxoo')
+* 重新导入模块
+    from imp import reload
+    reload(xxoo)
+* 模块循环导入问题
+    解决方法：设计时避免
+* ==与is的区别
+* 深拷贝与浅拷贝
+    深拷贝使用：import copy
+    a = copy.deepcopy(b)
+
+    - 注意copy.copy与copy.deepcopy的区别
+    - 注意copy.copy拷贝元组时的特点
+* 进制和位运算
+    进制之间的转换，使用函数：bin()/int()/hex()/oct()
+* 私有化
+    _X: 单前置下划线，私有化属性或方法，仅本模块使用，from xxx import *时禁止导入
+    __X: 双前置下划线，私有化属性或方法，避免与子类中的属性名冲突，无法在外部直接访问
+* property的使用
+
+
+
+
+
+
+
+
+
+
+
+
+

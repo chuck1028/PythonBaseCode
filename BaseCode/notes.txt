@@ -1,29 +1,53 @@
 * 配置模块导入路径
     sys.path.append('xxoo')
+
 * 重新导入模块
     from imp import reload
     reload(xxoo)
+
 * 模块循环导入问题
     解决方法：设计时避免
+
 * ==与is的区别
+
 * 深拷贝与浅拷贝
     深拷贝使用：import copy
     a = copy.deepcopy(b)
 
     - 注意copy.copy与copy.deepcopy的区别
     - 注意copy.copy拷贝元组时的特点
+
 * 进制和位运算
     进制之间的转换，使用函数：bin()/int()/hex()/oct()
+
 * 私有化
     _X: 单前置下划线，私有化属性或方法，仅本模块使用，from xxx import *时禁止导入
     __X: 双前置下划线，私有化属性或方法，避免与子类中的属性名冲突，无法在外部直接访问
+
 * property的使用
+    -property函数
+    -property装饰器
 
+* 可迭代对象和迭代器
+    可以直接作用于for循环的对象称为可迭代对象
+    判断可迭代对象的方法：
+    from collections import Iterable
+    isinstance(xxx, Iterable)
 
+    -可以被next()函数调用并返回下一个值的对象称为迭代器：Itertor
+    判断迭代器的方法：
+    from collections import Iterator
+    isinstance(xxx, Iterator)
 
+    -将一个可迭代对象变成迭代器使用iter()函数
+    a = iter(a)
 
+* 闭包
 
-
+* VIM注释多行方法
+    末行模式： %s/^/#/g 每行开头加上#号
+               %s/#//g  将每行的#号替换为空
+               1,,10s///g  指定行
 
 
 

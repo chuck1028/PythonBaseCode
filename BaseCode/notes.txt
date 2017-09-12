@@ -51,6 +51,30 @@
 
 * 装饰器
 
+* 作用域
+    globals()函数
+    locals()函数
+    __builtin__
+
+* Python动态添加属性和方法
+    给对象动态绑定属性和方法
+    给类动态绑定属性和方法
+    - 给对象动态绑定方法：
+        import types
+        xxxObj.xxxFunc = types.MethodType(xxxFunc, xxxObj)
+    - 静态方法与类方法的添加
+
+* 生成器
+
+* 对象的__call__方法
+
+* 类当装饰器
+    class C(object):
+        def __init__(self, func):
+            self.__func = func
+
+        def __call__(self):
+            self.__func()
 
 
 

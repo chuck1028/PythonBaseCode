@@ -76,6 +76,87 @@
         def __call__(self):
             self.__func()
 
+* 元类
+    使用type('className', (parentClass,...), {'propertyName': value})创建类对象
+    __metaclass__属性
 
+* 小整数对象池
+    [-5, 257] - 不包括257
+
+* 大整数对象池
+
+* intern机制
+    a = 'aaa'
+    b = 'aaa'
+    a与b内存地址相同
+
+    a = 'a a'
+    b = 'a a'
+    a与b内存地址不同（字符串中包含特殊字符）
+
+* Garbage collection(GC垃圾回收)
+    - 引用计数
+        import gc
+    - Ruby的标记清除
+    - Python的隔代回收
+    - 查看一个对象的引用计数
+        import sys
+        a = 1
+        sys.getref(a)
+
+* 内建属性
+    __getattribute__
+
+* 内建方法
+
+* 集合
+
+* 偏函数
+    import functools
+
+* 常用模块
+    builtins
+    os
+    sys
+    functools
+    json
+    logging
+    multiprocessing
+    threading
+    copy
+    time
+    calender
+    hashlib
+    random
+    re
+    socket
+    shutil
+    glob
+
+* 常用扩展库
+    requests
+    urllib
+    scrapy
+    beautifulsoup4
+    celery
+    redis
+    Pillow(PIL)
+    xlsxwriter
+    xlwt
+    xlrd
+    elasticsearch
+    pymysql
+    pymongo
+    matplotlib
+    numpy/scipy
+    django
+    tornado
+    flask
+    xmltodict
+    SimpleHTTPServer
+    gevent
+    fabric
+    pandas
+    scikit-learn
 
 

@@ -159,4 +159,55 @@
     pandas
     scikit-learn
 
+* PDB调试
+    python -m pdb xxx.py
+    l - 显示当前的代码
+    n - 向下执行一行代码
+    c - 继续执行代码
+    b - 设置断点
+    clear - 删除断点
+    s - step 单步执行，可进入函数
+    a - args 打印出所有的形参数据
+    p - 打印变量的值
+    q - quit 退出调试
+    r - return 快速执行到函数的最后一行
+
+    交互调试
+    import pdb
+
+    pdb.run('xxx(args)')
+    pdb.set_trace()
+
+* PEP8编码规范
+
+* 多进程
+    - Linux系统中使用os.fork()
+    - multiprocessing模块(可跨平台)
+        from multiprocessing import Process
+        - 使用Process类
+        - 创建Process的子类
+
+* 进程池Pool
+    from multiprocessing import Pool
+
+* 进程间通信
+   - Queue
+   - 进程池中的Queue
+        from multiprocessing import Manager, Pool
+        q = Manager().Queue()
+
+* 多线程
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -197,9 +197,35 @@
         q = Manager().Queue()
 
 * 多线程
+    - thread模块
+    - threading模块
+        - threading.Thread
+        - 使用threading.Thread的子类
 
+* 线程共享全局变量
 
+* 可变类型和不可变类型当实参
 
+* 互斥锁
+    - 避免死锁
+
+* 生产者消费者模型
+
+* threading.local
+
+* 同步与异步
+    from multiprocess import Pool
+    pool = Pool(3)
+    pool.apply_async(func=xxx, callback=ooo)
+
+* GIL的问题
+    - 可以使用C语言来解决GIL问题
+        from ctypes import *
+        from threading import Thread
+        lib = cdll.LoadLibrary("./libxxx.so")
+        t = Thread(target=lib.xxxFunc)
+        t.start()
+        #lib.xxxFunc()
 
 
 

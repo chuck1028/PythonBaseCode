@@ -227,6 +227,22 @@
         t.start()
         #lib.xxxFunc()
 
+* socket网络编程
+    import socket
+    - socket是全双工
+* UDP与TCP
+
+* 编码问题
+
+* wireshark抓包工具
+
+* tftp下载过程分析
+    - tftp协议
+    - pack与unpack的使用
+        import struct
+        send_data = struct.pack('!H8sb5sb', 1, 'test.jpg', 0, 'octet', 0)
+        a_tuple = struct.unpack('!HH', recv_data[0:4])
+
 
 
 

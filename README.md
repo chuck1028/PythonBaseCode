@@ -1,2 +1,2 @@
 # PythonBaseCode
-This is a directory for study python.
+This is a directory for studying python.

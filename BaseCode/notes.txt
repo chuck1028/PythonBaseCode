@@ -243,7 +243,34 @@
         send_data = struct.pack('!H8sb5sb', 1, 'test.jpg', 0, 'octet', 0)
         a_tuple = struct.unpack('!HH', recv_data[0:4])
 
+* UDP广播
+    -如果需要发送广播数据，则需要设置允许广播
+        dest = ('<broadcast>', 8888)    #广播地址
+        setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+    - 只有UDP可以广播，TCP不可以广播
 
+* TCP通信
+    - packet tracer工具
+
+* 交换机和集线器的区别
+    - 集线器都是广播
+    - 交换机可以记录通信地址
+
+* arp和icmp协议
+    - icmp ping的时候使用
+    - arp 获取电脑的MAC地址
+    - rarp 根据mac找ip
+
+* 命令 arp -a 查看ARP缓存列表
+
+* 路由器
+    - 确定一条路径的设备
+    - 路由器有多个网卡，可以连接多个不同网段
+
+* ping的过程
+    - mac地址在两个设备之间通信时在变化，而IP地址在整个通信过程中保持不变
+    - ip标记逻辑上的地址，mac标记实际转发时的设备地址，netmask和ip地址一起来确定网络号
+      默认网关发送的ip不在同一个网段内，那么会把这个数据转发给默认网关
 
 
 

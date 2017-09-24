@@ -1,2 +1,4 @@
 -------------Python的常用模块-----------
 1. struct  按指定格式打包和解包数据
+2. greenlet  协程实现多任务
+3. gevent  在greenlet之上更高级的封装

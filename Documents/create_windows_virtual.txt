@@ -1,5 +1,6 @@
-1. pip install virtualenv
-2. pip install virtualenvwrapper-win
-3. mkvirtualenv xxx
-4. deactivate.bat
-5. workon xxx
+1. pip install virtualenv    #安装virtualenv 
+2. pip install virtualenvwrapper-win    #安装virtualenvwrapper
+3. mkvirtualenv xxx    #创建虚拟环境xxx
+4. deactivate.bat    #退出当前虚拟环境
+5. workon xxx    #进入虚拟环境xxx
+6. workon    #查看存在的所有虚拟环境

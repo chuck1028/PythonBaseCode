@@ -1,0 +1,5 @@
+1. pip install virtualenv
+2. pip install virtualenvwrapper-win
+3. mkvirtualenv xxx
+4. deactivate.bat
+5. workon xxx

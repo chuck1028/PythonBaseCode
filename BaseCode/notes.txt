@@ -353,9 +353,43 @@
         链路层 --> 具体的传输工具
 
 * HTTP协议
+    - HTTP报文分析
+        HTTP请求方式：
+        GET    获取数据
+        POST    增加数据
+        PUT    修改数据
+        DELETE    删除数据
+        OPTION    询问服务器的某种支持特性
+        HEAD    返回报文头
+    - URL
+        L=Location 位置
+    - URN
+        N=Name 名字
 
+* HTTP无状态
 
+* 文件打开模式
+    - 文本与二进制的区别
+    - 文本模式写文件时，windows会自动将\n替换成\r\n
 
+* 静态web服务器面向对象编程抽象
+
+* 动态网站Web服务器与WSGI协议引入
+    - WSGI
+        模块入口函数:
+            def application(env, start_response):
+                env = {
+                    'xx': oo,
+                }
+                start_response(status_code, [('xx':oo),])
+                return body
+
+            env为字典格式
+            body返回响应体
+
+        服务端定义方法：
+            def start_response(self, status, headers):
+                pass
 
 
 

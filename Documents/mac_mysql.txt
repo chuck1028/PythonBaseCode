@@ -1,0 +1,5 @@
+mac下启动mysql服务:
+系统偏好设置->mysql->start mysql
+
+mac下mysql配置:
+打开终端->PATH="$PATH":/usr/local/mysql/bin->mysql -u xxx -p

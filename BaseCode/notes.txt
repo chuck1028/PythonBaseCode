@@ -387,9 +387,16 @@
             env为字典格式
             body返回响应体
 
+
         服务端定义方法：
             def start_response(self, status, headers):
                 pass
+
+* WSGI应用程序中status与headers定义位置的说明
+
+
+
+
 
 
 

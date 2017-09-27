@@ -1,0 +1,13 @@
+1. 配置用户名和密码:
+    git config --global user.name "UserName"
+    git config --global user.email "email@example.com"
+
+2. 创建版本库
+    mkdir learngit
+    cd learngit
+    git init    #初始化，将目录变成可以管理的仓库
+    git add xxx    #将修改提交到缓存区
+    git commit -m "msg"    #将缓存区内容提交到本地仓库，并记录日志信息msg
+
+
+--->下一步:时光机穿梭

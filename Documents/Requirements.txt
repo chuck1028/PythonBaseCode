@@ -1,0 +1,13 @@
+1. Python基础
+2. Python核心编程
+3. 数据结构与算法
+4. 数据库
+5. 前端
+6. Django框架
+7. 爬虫
+8. Tornado框架
+9. Shell和自动化运维
+10. Flask框架
+11. Twisted框架
+12. 网站部署
+13. Python设计模式

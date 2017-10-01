@@ -438,7 +438,78 @@
 
 * timeit模块
 
+* 数据结构和算法
+    - 内存存储数据的本质
+    - 顺序表和链表
+    - 顺序存储的基本操作
+        增加、删除
+    - 栈
+    - 队列
+    - 链表
+        - 单向链表
 
+* 爬虫
+    - 就是抓取网页数据的程序
+    - 网页三大特征
+        1. 每个网页都有自己的URL（统一资源定位符）来进行定位
+        2. 网页都使用HTML（超文本标记语言）来描述页面信息
+        3. 网页都使用HTTP/HTTPS（超文本传输协议）协议来传输HTML数据
+
+    - 爬虫设计思路
+        1. 首先确定需要爬取的网页URL地址
+        2. 通过HTTP/HTTP协议来获取对应的HTML页面
+        3. 提取HTML页面里有用的数据
+            a. 如果是需要的数据，就保存起来
+            b. 如果是页面里的其他URL，那就继续执行第二步
+
+    - 相关模块:
+        抓取HTML: urllib、urllib2、requests
+        解析: re、xpath、BeautifulSoup4(bs4)、jsonpath、pyquery
+    - 采集动态HTML以及验证码处理
+        通用的动态页面采集: Selenium + PhantomJS（无界面浏览器）:模拟真实浏览器加载数据
+        Tesseract: 机器学习库，机器图像识别系统，可以处理简单的验证码，复杂的验证码可以通过手动输入或打码平台
+    - Scrapy框架：
+        - Scrapy 和 Pyspider
+    - 分布式策略
+        - scrapy-redis：在Scrapy的基础上添加了以Redis数据库为核心的一套组件，
+                        让Scrapy框架支持分布式的功能
+    - 爬虫、反爬虫、反反爬虫
+
+* 通用爬虫
+    - 搜索引擎用的爬虫系统
+
+* 聚焦爬虫
+    - 爬虫程序员写的针对某种内容的爬虫
+
+* Robots协议
+    - Robots.txt
+    - 协议会指明通用爬虫可以爬取网页的权限
+
+* 搜索引擎排名
+    - PageRank值
+
+* Fiddler工具
+    - telerik fiddler web debugger
+
+* 世界上第一个浏览器: Mosaic - 美国国家计算机应用中心
+
+* Netscope: 网景 - 支持框架
+
+* Microsoft 微软: internet Explorer
+
+* Mozilla 基金组织: FireFox火狐 - Gecko内核
+
+* User-Agent
+
+* uellib和urllib2模块
+    - python3中为urllib.request
+
+* Ajax加载方式的数据获取
+    - Ajax方式加载的页面，数据格式一定是json，拿到json就是拿到了数据
+
+* 利用cookie模拟登录
+
+* CA证书
 
 
 

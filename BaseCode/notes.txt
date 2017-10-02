@@ -511,6 +511,22 @@
 
 * CA证书
 
+* Handler和Opener以及开放代理和私密代理
+
+*  可在~/.bash_profile添加环境变量
+    - 通过os.environ.get('xxx')获取
+
+* 通过Cookielib和HTTPCookieProcess模拟登录
+
+* BeautifulSop应用模拟登录以及验证码处理
+
+* JSON和JSONPATH应用
+
+* Selenium和PhantomJS介绍
+
+* Tesseract和pytesseract
+
+
 
 
 

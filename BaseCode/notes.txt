@@ -526,16 +526,24 @@
 
 * Tesseract和pytesseract
 
+* Scrapy框架
 
+* LinkExtract链接提取规则和Rule爬取规则
 
+* CrawlSpider案例演示
 
-
-
-
+* scrapy-redis介绍和redis集群搭建
 
 * Tornado框架
     - 轻量级web框架
     - 有出色抗负载能力的Web服务器
+    - 基于Epoll
+
+    - tornado.ioloop.IOLoop.current().start()
+    - tornado.httpserver
+
+    - request请求数据
+
 
 
 

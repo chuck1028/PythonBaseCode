@@ -2,6 +2,6 @@
 # Author: Jason Lee
 import requests
 
-url = 'http://localhost:8000/'
+url = 'http://www.baidu.com/'
 
 requests.get(url)

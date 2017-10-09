@@ -1,0 +1,30 @@
+Pypi国内镜像目前有:
+
+http://pypi.douban.com/  豆瓣
+http://pypi.hustunique.com/  华中理工大学
+http://pypi.sdutlinux.org/  山东理工大学
+http://pypi.mirrors.ustc.edu.cn/  中国科学技术大学
+ 
+对于pip这种在线安装的方式来说，很方便，但网络不稳定的话很要命。使用国内镜像相对好一些，
+ 
+如果想手动指定源，可以在pip后面跟-i 来指定源，比如用豆瓣的源来安装web.py框架：
+pip install web.py -i http://pypi.douban.com/simple
+ 
+注意后面要有/simple目录！！！
+ 
+要配制成默认的话，需要创建或修改配置文件（linux的文件在~/.pip/pip.conf，windows在%HOMEPATH%\pip\pip.ini），修改内容为：
+code:
+[global]
+index-url = http://pypi.douban.com/simple
+ 
+这样在使用pip来安装时，会默认调用该镜像。
+
+
+
+
+
+
+
+
+
+

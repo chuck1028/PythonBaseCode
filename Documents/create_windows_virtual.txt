@@ -4,3 +4,6 @@
 4. deactivate.bat    #退出当前虚拟环境
 5. workon xxx    #进入虚拟环境xxx
 6. workon    #查看存在的所有虚拟环境
+
+使用virtualenv创建python3的虚拟环境:
+virtualenv -p /usr/bin/python3 venv3

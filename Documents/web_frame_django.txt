@@ -1,2 +1,26 @@
 * DRY: Don't repeat yourself!
+
 * wsgiref 模块
+
+* MTV和MVC模式
+
+* 配置app到settings，方便在数据库建立表
+
+* Django路由系统
+    - 正则匹配
+        - 完整匹配
+        - 正则分组
+        - 正则命名
+    - url别名
+    - 路由分发
+
+* Django视图函数
+
+* request对象的所有属性
+
+* 返回response对象的所有方法
+    - locals()方法将本地所有变量及其值打包成字典
+
+* redirect重定向
+
+* 小示例：轮播图

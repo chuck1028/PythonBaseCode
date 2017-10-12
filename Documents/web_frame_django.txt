@@ -188,3 +188,24 @@
 
     # 去重方法
     qs = qs.distinct()
+
+* ORM(对象关系映射)
+    - 一个模型类对应数据库里的一张表
+    - 创建单表
+
+    - 创建关联表(foreignkey)
+        - 一对一
+            - 对pk加唯一限制,unique=True
+        - 一对多
+            - pk_id = 1
+            - pk_obj = obj
+            - 正向查找和反向查找
+        - 多对多
+            - django自动创建第三张表或者自己创建第三张表
+            - book.author.add(authors)
+
+    - Queryset可迭代、可切片
+    - Queryset的惰性机制
+    - Queryset的exists()方法
+    - Queryset的iterator()方法
+    - 级联删除

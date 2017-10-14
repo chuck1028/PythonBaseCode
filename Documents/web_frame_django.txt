@@ -209,3 +209,9 @@
     - Queryset的exists()方法
     - Queryset的iterator()方法
     - 级联删除
+    - 了不起的双下划綫
+        单表查询
+        - __gt __lt __in __contains __range ...
+
+        关联查询
+        - Book.objects.filter(publisher__name='xxx')

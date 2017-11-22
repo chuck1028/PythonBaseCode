@@ -1,4 +1,15 @@
 ********************** Python的常用模块 ****************************
+
+标准库模块：
+1. collections
+2. tokenize
+3. functools
+4. hashlib
+5. pickle
+6. threading
+7. contextlib
+
+
 数据相关:
 1. struct  按指定格式打包和解包数据
 

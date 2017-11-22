@@ -13,10 +13,27 @@
 3. Pycharm远程连接ubuntu的方法
     settings->Project interpreter->setting->add remote->deployment configuration->...->connection中配置host、用户名和密码->mappings中配置远程关联路径
 
+4. Ubuntu 16.04安装PyCharm－Python IDE
+    PyCharm一个是Python集成开发环境，它既提供收费的专业版，也提供免费的社区版本。PyCharm带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、自动完成、单元测试。
+    PyCharm非常好用，而且是跨平台的。
+    PyCharm网址：http://www.jetbrains.com/pycharm/
 
+    Ubuntu 16.04 安装PyCharm
+    本文通过第三方源安装PyCharm，好处是升级方便。
 
+    添加源：
+    $ sudo add-apt-repository ppa:mystic-mirage/pycharm
 
+    安装收费的专业版：
+    $ sudo apt update
+    $ sudo apt install pycharm
 
+    安装免费的社区版：
+    $ sudo apt update
+    $ sudo apt install pycharm-community
+
+    卸载：
+    $ sudo apt remove pycharm pycharm-community && sudo apt autoremove
 
 
 

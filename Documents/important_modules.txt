@@ -11,3 +11,6 @@ ORM相关:
 
 网络相关:
 1. hammock
+
+图像处理相关:
+1. Pillow

@@ -1,0 +1,20 @@
+网站部署：
+一、服务器
+    私有服务器、公有服务器
+
+二、服务器环境配置
+    pip freeze > plist.txt
+
+三、安装环境
+    pip install -r plist.txt
+
+四、更改settings.py文件
+    DEBUG = True
+
+    ALLOWED_HOSTS = []
+
+
+
+
+
+

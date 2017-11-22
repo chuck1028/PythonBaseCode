@@ -2,15 +2,28 @@
 数据相关:
 1. struct  按指定格式打包和解包数据
 
+
 并发相关:
 1. greenlet  协程实现多任务
 2. gevent  在greenlet之上更高级的封装
+3. asyncio  异步编程模块
+
 
 ORM相关:
 1. peewee 一款轻量级ORM框架
 
+
 网络相关:
 1. hammock
 
+
 图像处理相关:
 1. Pillow
+
+
+测试相关:
+1. unittest  单元测试模块
+
+
+其他:
+1. argparse  解析命令行参数及选项

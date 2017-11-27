@@ -228,3 +228,11 @@
 
 
 4. 函数注解
+
+
+5. 描述符协议
+    描述符类基于3个特殊方法，
+    __set__(self, obj, type=None)
+    __get__(self, obj, value)
+    __delete__(self, obj)
+

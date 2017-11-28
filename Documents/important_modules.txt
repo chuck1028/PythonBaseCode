@@ -75,6 +75,7 @@
 
 数据库相关：
 1. sqlite3
+2. psycopg2 - PostgreSQL相关
 
 
 并发相关:
@@ -119,6 +120,7 @@ ORM相关:
 4. pylint
 5. halts
 6. pstats
+7. mock
 
 
 图形界面相关：

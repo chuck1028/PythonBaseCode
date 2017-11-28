@@ -63,6 +63,10 @@
 60. rlcompleter
 61. atexit
 62. pdb
+63. ast
+64. macropy
+65. hy
+66. dis
 
 
 数据相关:
@@ -97,6 +101,11 @@ ORM相关:
 11. web.py
 12. Webware
 13. Zope
+14. falcon  - web框架
+15. Pyramid - web框架
+16. Flask - web框架
+17. Bottle - web框架
+18. web2py - web框架
 
 
 图像处理相关:

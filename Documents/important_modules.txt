@@ -82,6 +82,7 @@
 1. greenlet  协程实现多任务
 2. gevent  在greenlet之上更高级的封装
 3. asyncio  异步编程模块
+4. subprocess
 
 
 ORM相关:

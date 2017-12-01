@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+//纯C扩展代码
+//创建应用代码
 int fac(int n){
     if (n < 2){
         return 1;
@@ -42,6 +44,9 @@ int test(void){
     return 0;
 }
 
+//根据样板代码编写封装代码
+//1. 包含Python.h头文件
+//2. 为函数编写形如 P月Object *Module_func()的封装函数
 static PyObject * ext_fac(PyObject *self, PyObject *args){
     int res =0;
     int num =0;
@@ -68,12 +73,14 @@ static PyObject * ext_doppel(PyObject *self, PyObject *args){
     return (PyObject *)Py_BuildValue("ss", orig_str, reverse(strdup(orig_str)));
 }
 
+//3. 为模块编写 PyMethodDef ModuleMethods[] 数组
 static PyMethodDef extMethods[] = {
-    {"fac", ext_fac, METH_VARARGS},
+    {"fac", ext_fac, METH_VARARGS},    //METH_VARARGS 表示参数以元组形式给定
     {"doppel", ext_doppel, METH_VARARGS},
     {NULL, NULL},
 };
 
+//4. 添加模块初始化函数 void initModule()
 void initext(void){
     Py_InitModule("ext", extMethods);
 }

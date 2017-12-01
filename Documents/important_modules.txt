@@ -67,6 +67,12 @@
 64. macropy
 65. hy
 66. dis
+67. locale
+68. htmllib
+69. formatter
+70. html5lib
+72. http.server
+73. cgitb
 
 
 数据相关:
@@ -108,6 +114,14 @@ ORM相关:
 16. Flask - web框架
 17. Bottle - web框架
 18. web2py - web框架
+19. ftplib
+20. nntplib
+21. smtplib
+22. poplib
+23. imaplib
+24. email
+25. platform
+26. cStringIO
 
 
 图像处理相关:

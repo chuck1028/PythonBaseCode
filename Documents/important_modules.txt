@@ -1,12 +1,88 @@
 ********************** Python的常用模块 ****************************
+
+标准库模块：
+1. collections
+2. tokenize
+3. functools
+4. hashlib
+5. pickle
+6. threading
+7. contextlib
+8. os
+9. pickle
+10. timeit
+11. re
+12. __future__
+13. cmath
+14. math
+15. copy
+16. sys
+17. pprint
+18. fileinput
+19. sets
+20. heapq
+21. time
+22. random
+23. shelve
+24. functools
+25. difflib
+26. hashlib
+27. csv
+28. profile
+29. trace
+30. datetime
+31. itertools
+32. logging
+33. getopt和optparse
+34. cmd
+35. socket
+36. asynchat
+37. asyncore
+38. cgi
+39. Cookie
+40. cookielib
+41. email
+42. ftplib
+43. gopherlib
+44. httplib
+45. imaplib
+46. mailbox
+47. mailcap
+48. mhlib
+49. nntplib
+50. poplib
+51. robotparser
+52. SimpleXMLRPCServer
+53. smtpd
+54. smtplib
+55. telnetlib
+56. urlparse
+57. xmlrpclib
+58. SocketServer
+59. select
+60. rlcompleter
+61. atexit
+62. pdb
+63. ast
+64. macropy
+65. hy
+66. dis
+
+
 数据相关:
 1. struct  按指定格式打包和解包数据
+
+
+数据库相关：
+1. sqlite3
+2. psycopg2 - PostgreSQL相关
 
 
 并发相关:
 1. greenlet  协程实现多任务
 2. gevent  在greenlet之上更高级的封装
 3. asyncio  异步编程模块
+4. subprocess
 
 
 ORM相关:
@@ -15,6 +91,23 @@ ORM相关:
 
 网络相关:
 1. hammock
+2. twisted
+3. Albatross
+4.CherryPy
+5. Django
+6. Plone
+7. Pylons
+8. Quixote
+9. Spyce
+10. TurboGears
+11. web.py
+12. Webware
+13. Zope
+14. falcon  - web框架
+15. Pyramid - web框架
+16. Flask - web框架
+17. Bottle - web框架
+18. web2py - web框架
 
 
 图像处理相关:
@@ -23,6 +116,36 @@ ORM相关:
 
 测试相关:
 1. unittest  单元测试模块
+2. doctest
+3. pychecker
+4. pylint
+5. halts
+6. pstats
+7. mock
+
+
+图形界面相关：
+1. easygui
+2. tkinter
+3. wxpython
+
+
+爬虫相关：
+1. urllib
+2. urllib2
+3. BeautifulSoup4
+4. Scrapy
+
+
+游戏相关：
+1. pygame
+
+
+程序打包：
+1. distutils
+2. setuptools
+3. py2exe
+4. py2app
 
 
 其他:

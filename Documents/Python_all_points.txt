@@ -189,4 +189,54 @@
     34. 基于iframe和form表单伪造ajax并实现文件上传
 
 
+******************************************知识点*****************************************
+1. 迭代器
+    - 一个实现了迭代器协议的容器对象
 
+    它基于一下两个方法：
+    __next__ : 返回容器的下一个元素
+    __iter__ : 返回迭代器本身
+
+    迭代器可以利用内置的iter函数和一个序列来创建
+
+
+2. 类装饰器
+    通用模式：
+
+    class DecoratorAsClass:
+        def __init__(self, function):
+            self.function = function
+
+        def __call__(self, *args, **kwargs):
+            # 调用之前做点什么
+            result = self.function(*args, **kwargs)
+            # 调用之后做点什么
+
+            # 返回结果
+            return result
+
+
+3. 上下文管理器协议
+    该协议包含两个特殊方法：
+    __enter__(self)
+    __exit__(self, exc_type, exc_value, traceback)
+
+    执行with语句的过程如下:
+    调用__enter__方法，任何返回值都会绑定到指定的as子句
+    执行内部代码块
+    调用__exit__方法
+
+
+4. 函数注解
+
+
+5. 描述符协议
+    描述符类基于3个特殊方法，
+    __set__(self, obj, type=None)
+    __get__(self, obj, value)
+    __delete__(self, obj)
+
+
+6. 可哈希类型的协议包括两个方法
+    __hash__:给出dict内部实现需要的散列值（整数），对于用户自定义类的实例对象，这个值由id()给出
+    __eq__: 比较两个对象的值是否相等，对于用户自定义类，除了自身之外，所有实例对象默认不相等。

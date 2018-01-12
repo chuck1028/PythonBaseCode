@@ -145,7 +145,15 @@ timeout仅对连接过程有效，与响应体的下载无关
 所有Requests显示抛出的异常都继承自requests.exceptions.RequestException: ConnectionError HTTPError Timeout TooManyRedirects
 
 
+=====笔记====
+内容：
+1. 总体介绍
+2. HTTP基本原理
+3. 发送请求[Request]
+4. 接收响应[Response]
+5. 进阶话题
 
+gunicorn httpbin:app
 
 
 

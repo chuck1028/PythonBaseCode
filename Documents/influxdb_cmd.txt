@@ -1,0 +1,21 @@
+InfluxDb 命令:
+
+show databases    显示当前所有数据库
+create database xxx    创建数据库
+drop database xxx    删除数据库
+use xxx    使用数据库
+
+influxDB中没有显式的新建表的语句，只能通过insert数据的方式来建立新表。如下所示：
+    insert disk_free,hostname=server01 value=442221834240i 1435362189575692182
+    其中 disk_free 就是表名，hostname是索引，value=xx是记录值，记录值可以有多个，最后是指定的时间
+
+show measurements    查看所有表
+
+select * from xxx    查看表里所有数据
+
+drop measurement xxx    删除表
+
+增加数据采用insert的方式，要注意的是 InfluxDB的insert中，表名与数据之间用逗号（,）分隔，tag和field之间用 空格分隔，多个tag或者多个field之间用逗号（,）分隔。
+
+可以通过如下语句查看数据库的现有策略:
+show retention policies on mydb
